@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visor de PDF</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+  </head>
+  <body>
+    <div id="pdf-container"></div>
+    <div id="pdf-controls">
+      <button id="prev-page-btn">Anterior</button>
+      <button id="next-page-btn">Siguiente</button>
+      <input type="range" id="page-slider" min="1" max="1" value="1" />
+    </div>
+    <div id="pdf-toolbar">
+        <button id="prev-page">Anterior</button>
+        <button id="next-page">Siguiente</button>
+        <button id="zoom-in">Acercar</button>
+        <button id="zoom-out">Alejar</button>
+    </div>      
+    <script src="app.js"></script>
+    <script src="barra.js"></script>
+  </body>
+</html>
